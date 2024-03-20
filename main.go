@@ -12,6 +12,7 @@ func main() {
 		ctx.String(http.StatusOK, "Hello World")
 	})
 
+	// run the server
 	err := router.Run(":8080")
 	if err != nil {
 		panic(err)
